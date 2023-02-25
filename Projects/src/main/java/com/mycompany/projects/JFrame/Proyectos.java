@@ -1,4 +1,10 @@
-package com.mycompany.projects;
+package com.mycompany.projects.JFrame;
+
+import com.mycompany.projects.Proy1.Proy1;
+import com.mycompany.projects.Proy2.Proy2;
+import com.mycompany.projects.Proy3.Proy3;
+import com.mycompany.projects.Proy4.Proy4;
+import com.mycompany.projects.Proy5.Proy5;
 
 public class Proyectos extends javax.swing.JFrame {
 
@@ -7,6 +13,7 @@ public class Proyectos extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
     }
 
+    // Inicio del Diseño JFrame
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
@@ -112,32 +119,39 @@ public class Proyectos extends javax.swing.JFrame {
 
         pack();
     }
+    // Fin del Diseño JFrame
 
+    // Inicio de botones que dirigen a cada Proyecto
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
-        System.out.print("1");
+        Proy1 proy1 = new Proy1();
+        proy1.Inicio();
     }
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
-        System.out.print("2");
+        Proy2 proy2 = new Proy2();
+        proy2.Inicio();
     }
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
-        System.out.print("3");
+        Proy3 proy3 = new Proy3();
+        proy3.Inicio();
     }
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {
-        System.out.print("4");
+        Proy4 proy4 = new Proy4();
+        proy4.Inicio();
     }
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {
-        System.out.print("5");
+        Proy5 proy5 = new Proy5();
+        proy5.Inicio();
     }
-
+    // Fin de botones que dirigen a cada Proyecto
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());                    
                     break;
                 }
             }
