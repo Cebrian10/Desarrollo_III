@@ -16,6 +16,5 @@ public class Proy1 {
         } catch (Exception e) {
             //System.out.print("Se cerro");
         }
-
     }
 }
